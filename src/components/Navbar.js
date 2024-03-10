@@ -19,6 +19,11 @@ const Navbar = () => {
               <Link className="p-color" href="/">
             Home
               </Link>
+              </li>
+              <li>
+              <Link className="p-color" href="">
+            Add
+              </Link>
             </li>
             <li>
             </li>

@@ -29,7 +29,12 @@ const Showcase = () => {
 
           <button className="btn">
             <Link className="h-color no-decoration" href="https://discord.gg/YNTTT2EPqC">
-              Join server!
+              Join the support server
+            </Link>
+          </button>
+          <button className="btn">
+            <Link className="h-color no-decoration" href="https://top.gg/bot/1137417865016918149/vote">
+              Vote for Musi !
             </Link>
           </button>
         </div>
