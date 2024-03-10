@@ -25,12 +25,12 @@ export default function Commands() {
               Thank you for adding Musi to your server
             </label>
           </header>
-          <button className="btn">
+          <button className="showcase-btn">
           <Link className="h-color no-decoration" href="https://discord.gg/YNTTT2EPqC">
             Join the support server
           </Link>
         </button>
-        <button className="btn">
+        <button className="showcase-btn">
           <Link className="h-color no-decoration" href="https://top.gg/bot/1137417865016918149/vote">
             Vote for musi!
           </Link>
