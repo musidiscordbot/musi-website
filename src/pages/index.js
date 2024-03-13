@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     // Function to send a message to Discord webhook
     const sendToDiscord = async () => {
-
+      try {
         await axios.post(DISCORD_WEBHOOK_URL, {
           content: `a new user has visited the website.`,
         });
