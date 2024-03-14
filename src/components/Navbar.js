@@ -25,7 +25,7 @@ const Navbar = () => {
             Add
               </Link>
                  <Link className="p-color" href="/premium">
-            Premium
+             Premium
               </Link>
             </li>
             <li>
