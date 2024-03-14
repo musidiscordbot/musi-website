@@ -37,6 +37,11 @@ const Showcase = () => {
               Vote for Musi!
             </Link>
           </button>
+                      <button className="btn">
+            <Link className="h-color no-decoration" href="/premium">
+              Premium
+            </Link>
+          </button>
         </div>
       </main>
     </motion.div>
