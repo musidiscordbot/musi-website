@@ -1,5 +1,10 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import Head from "next/head";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Commands() {
   const router = useRouter();
