@@ -39,7 +39,7 @@ export default function RedirectPage() {
       <nav className="accordion arrows" id="commands">
         <header className="box">
           <label htmlFor="acc-close" className="box-title h-color">
-            Redirecting...
+            Redirecting to {router.query.url}.... you will be redirected in 5 seconds
           </label>
         </header>
       </nav>
