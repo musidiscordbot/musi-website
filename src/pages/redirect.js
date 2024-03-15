@@ -23,9 +23,29 @@ export default function Commands() {
     }
   }, [router.query.url]);
 
-  return (
-    <div>
-      Redirecting to {router.query.url && new URL(router.query.url).hostname}...
-    </div>
+ return (
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{ opacity: 1 }}
+    >
+      <Head>
+        <title>Redirect | Musi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar />
+      <section className="about-section">
+        <nav className="accordion arrows" id="commands">
+          <header className="box">
+            <label htmlFor="acc-close" className="box-title h-color">
+              Redirecting to ${domain}
+            </label>
+          </header>
+        </nav>
+      </section>
+      <Footer />
+    </motion.div>
   );
 }
