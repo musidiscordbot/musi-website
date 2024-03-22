@@ -2,7 +2,7 @@
 
 export default async function handler(req, res) {
   try {
-    const response = await fetch("http://192.9.183.164:25878/");
+    const response = await fetch("http://109.228.36.51:25000/");
     if (response.status === 200) {
       res.status(200).json({ isBotOnline: true });
     } else {
