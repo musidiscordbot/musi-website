@@ -27,9 +27,13 @@ export default function Commands() {
       animate={{ opacity: 1 }}
     >
       <Head>
-        <title>Invite | Musi</title>
+    <meta property="og:title" content="musi.lol/invite" />
+        <meta property="og:description" content="The best free discord music bot." />
+        <meta property="og:image" content="https://i.ibb.co/h7nzKk6/musi-favicon-white-removebg-preview.png" />  {/* Replace with your image URL */}
+        <meta property="og:url" content="https://musi.lol" />  {/* Replace with your website URL */}
+        <title>Musi.lol - Inviting</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://i.ibb.co/h7nzKk6/musi-favicon-white-removebg-preview.png" />
       </Head>
       <Navbar />
       <section className="about-section">
