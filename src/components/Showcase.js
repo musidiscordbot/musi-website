@@ -38,8 +38,8 @@ const Showcase = () => {
             </Link>
           </button>
                       <button className="btn">
-            <Link className="h-color no-decoration" href="/premium">
-              Premium
+            <Link className="h-color no-decoration" href="/status">
+              Status
             </Link>
           </button>
         </div>
