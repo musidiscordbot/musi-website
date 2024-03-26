@@ -1,5 +1,8 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
+
+const openPopup = (url) => {
+  window.open(url, 'popupWindow', 'width=600,height=400');
+};
 
 const Showcase = () => {
   return (
@@ -12,35 +15,37 @@ const Showcase = () => {
       <main className="showcase">
         <h1 className="showcase-header h-color">Musi</h1>
         <h2 className="showcase-header-text h-color">
-          The only discord music bot youl ever need!
+          The only discord music bot you'll ever need!
         </h2>
         <p className="showcase-para p-color">
-          One of the awesome discord bot with tons of commands that will fill
+          One of the awesome discord bots with tons of commands that will fill
           your needs in your discord server.
         </p>
 
         <span className="p-color"></span>
         <div className="showcase-btn">
           <button className="btn">
-            <Link className="h-color no-decoration" href="https://discord.com/oauth2/authorize?client_id=1137417865016918149&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmusi.lol%2Fadded&scope=bot+identify">
+            <a className="h-color no-decoration" onClick={() => openPopup('https://discord.com/oauth2/authorize?client_id=1137417865016918149&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fmusi.lol%2Fadded&scope=bot+identify')}>
               Invite now
-            </Link>
+            </a>
           </button>
 
           <button className="btn">
-            <Link className="h-color no-decoration" href="https://discord.gg/YNTTT2EPqC">
+            <a className="h-color no-decoration" onClick={() => openPopup('https://discord.gg/YNTTT2EPqC')}>
               Join the support server
-            </Link>
+            </a>
           </button>
+
           <button className="btn">
-            <Link className="h-color no-decoration" href="https://top.gg/bot/1137417865016918149/vote">
+            <a className="h-color no-decoration" onClick={() => openPopup('https://top.gg/bot/1137417865016918149/vote')}>
               Vote for Musi
-            </Link>
+            </a>
           </button>
-                      <button className="btn">
-            <Link className="h-color no-decoration" href="/status">
+
+          <button className="btn">
+            <a className="h-color no-decoration" onClick={() => openPopup('/status')}>
               Status
-            </Link>
+            </a>
           </button>
         </div>
       </main>
