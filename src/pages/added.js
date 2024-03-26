@@ -3,8 +3,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Commands() {
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.close();
+    }, 7500); // 15 seconds
+
+    // Clear timeout if the component is unmounted
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <motion.div
       initial={{
@@ -26,16 +37,15 @@ export default function Commands() {
             </label>
           </header>
           <button className="btn">
-          <Link className="h-color no-decoration" href="https://discord.gg/YNTTT2EPqC">
-            Join the support server
-          </Link>
-        </button>
-        <button className="btn">
-          <Link className="h-color no-decoration" href="https://top.gg/bot/1137417865016918149/vote">
-            Vote for musi!
-          </Link>
-        </button>
-          
+            <Link className="h-color no-decoration" href="https://discord.gg/YNTTT2EPqC">
+              Join the support server
+            </Link>
+          </button>
+          <button className="btn">
+            <Link className="h-color no-decoration" href="https://top.gg/bot/1137417865016918149/vote">
+              Vote for musi!
+            </Link>
+          </button>
         </nav>
       </section>
       <Footer />
