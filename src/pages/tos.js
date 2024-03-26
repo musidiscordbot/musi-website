@@ -74,7 +74,8 @@ These Terms of Service shall be governed by and construed in accordance with the
 
 10. Contact Us
 
-If you have any questions or concerns regarding these Terms of Service, please contact us at [Your Contact Information].
+If you have any questions or concerns regarding this Terms of service, please contact us at contact@musi.lol or our support server at discord.gg/musi.
+
 
 
             </label>
