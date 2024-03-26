@@ -1,5 +1,5 @@
 const openPopup = (url) => {
-  window.open(url, 'popupWindow', 'width=600,height=400');
+  window.open(url, 'popupWindow', 'width=800,height=600');
 };
 
 const JoinNow = () => {
