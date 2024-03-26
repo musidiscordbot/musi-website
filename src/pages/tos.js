@@ -128,7 +128,7 @@ export default function TermsOfService() {
             </label>
             <label className="box-close" htmlFor="acc-close"></label>
             <div className="box-content p-color">
-              Byusing Musi, you agree to our Privacy Policy, which can be found [link to Privacy Policy].
+              By using Musi, you agree to our Privacy Policy, which can be found at <a href="https://musi.lol/privacyl">Our privacy Page</a>
 </div>
 </section>
       <input type="radio" name="accordion" id="cb10" />
@@ -138,7 +138,7 @@ export default function TermsOfService() {
         </label>
         <label className="box-close" htmlFor="acc-close"></label>
         <div className="box-content p-color">
-          These Terms of Service shall be governed by and construed in accordance with the laws of [Your Jurisdiction].
+          These Terms of Service shall be governed by and construed in accordance with the laws of the uk.
         </div>
       </section>
 
