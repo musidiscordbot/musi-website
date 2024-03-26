@@ -1,7 +1,11 @@
 const openPopup = (url) => {
-  window.open(url, 'popupWindow', 'width=800,height=600');
-};
+  const width = 600;
+  const height = 400;
+  const left = window.innerWidth / 2 - width / 2;
+  const top = window.innerHeight / 2 - height / 2;
 
+  window.open(url, 'popupWindow', `width=${width},height=${height},left=${left},top=${top}`);
+};
 const JoinNow = () => {
   return (
     <>
