@@ -2,7 +2,7 @@
 
 export default async function handler(req, res) {
   try {
-    const response = await fetch("http://au-1-syd.upstand.app:25081/");
+    const response = await fetch("http://de-5-fra.upstand.app:25022");
     if (response.status === 200) {
       res.status(200).json({ isBotOnline: true });
     } else {
